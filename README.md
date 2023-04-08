@@ -1,0 +1,2 @@
+# NVsoulfire
+custom neovim configuration

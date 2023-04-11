@@ -150,8 +150,19 @@ return packer.startup(function(use)
   --cellular automaton
   use "Eandrju/cellular-automaton.nvim"
 
+  --git plugins
+  -- 
+  --vimfugitive
+  use "tpope/vim-fugitive"
 
-
+  --gitsigns
+  --perhaps we will make a config file for this
+  use {
+  'lewis6991/gitsigns.nvim',
+  config = function()
+    require('gitsigns').setup()
+  end
+}
 
 
 

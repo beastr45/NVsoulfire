@@ -81,7 +81,7 @@ cmp.setup {
         fallback()
       end
     end, {
-      "i",
+    "i",
       "s",
     }),
     ["<S-Tab>"] = cmp.mapping(function(fallback)

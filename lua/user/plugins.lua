@@ -55,12 +55,14 @@ return packer.startup(function(use)
   --colorschemes
   --use "olimorris/onedarkpro.nvim"
   use "NLKNguyen/papercolor-theme"
+  --auto pair ex. ()
   use "tmsvg/pear-tree"
 
 
   --nvim-tree
   use "nvim-tree/nvim-web-devicons"
   use "nvim-tree/nvim-tree.lua"
+
   -- tabs
   use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 
@@ -78,8 +80,8 @@ return packer.startup(function(use)
   use "L3MON4D3/LuaSnip"
   use "rafamadriz/friendly-snippets"
 
-  --emmet
-  use "mattn/emmet-vim"
+  -- --emmet
+  -- use "mattn/emmet-vim"
 
   -- LSP
   use "neovim/nvim-lspconfig"             -- enable LSP
@@ -121,13 +123,13 @@ return packer.startup(function(use)
 
 
   --startup screen
-  use {
-    "startup-nvim/startup.nvim",
-    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-    config = function()
-      require "startup".setup()
-    end
-  }
+  -- use {
+  --   "startup-nvim/startup.nvim",
+  --   requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+  --   config = function()
+  --     require "startup".setup()
+  --   end
+  -- }
 
   --indent guides for empty spaces
   use "lukas-reineke/indent-blankline.nvim"
@@ -146,9 +148,9 @@ return packer.startup(function(use)
     cmd = 'CodeActionMenu' }
 
   --tetris plugin
-  use "alec-gibson/nvim-tetris"
+  --use "alec-gibson/nvim-tetris"
   --cellular automaton
-  use "Eandrju/cellular-automaton.nvim"
+  --use "Eandrju/cellular-automaton.nvim"
 
   --git plugins
   -- 

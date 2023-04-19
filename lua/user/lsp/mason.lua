@@ -6,8 +6,10 @@ local servers = {
 	"pyright",
 	-- "bashls",
 	"jsonls",
-  "rust_analyzer"
+  "rust_analyzer",
+  "eslint",
 	-- "yamlls",
+  "asm_lsp"
 }
 
 local settings = {

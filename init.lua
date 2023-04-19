@@ -30,7 +30,6 @@ require "user.lsp"
 
 
 --PLUGINS
-require "user.plugins.miscOpt"
 require("bufferline").setup{}
 require "user.plugins.cmp"
 require "user.plugins.treesitter"

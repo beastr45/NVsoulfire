@@ -18,7 +18,7 @@
 --          ''.             .::c:
 --            .               :
 --neovim config!
---all of the config is iomported into this main init.lua file to stay organized (:
+--all of the config is imported into this main init.lua file to stay organized (:
 
 -- require configuration files
 require "user.options"

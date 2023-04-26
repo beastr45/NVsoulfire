@@ -1,10 +1,10 @@
---                             ,XK        
---                             ldo        
---                            cdd,        
---                     .NXK0Okdd.         
---                   ,Odd;                
---                   xd;                  
---                  .dd.                  
+--                             ,XK
+--                             ldo
+--                            cdd,
+--                     .NXK0Okdd.
+--                   ,Odd;
+--                   xd;
+--                  .dd.
 --.KkxddddddddddddddddddddddddddddddddxkK.
 --dddddddddddddddddddddddddddddddddddddddx
 --odddc  .d.  cl   d;  ;d.  lc  .d'  :dddd
@@ -37,6 +37,21 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+-- place this in one of your configuration file(s)
+local hop = require('hop')
+local directions = require('hop.hint').HintDirection
+vim.keymap.set('', 'f', function()
+  hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
+end, {remap=true})
+vim.keymap.set('', 'F', function()
+  hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
+end, {remap=true})
+-- vim.keymap.set('', 't', function()
+--   hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
+-- end, {remap=true})
+-- vim.keymap.set('', 'T', function()
+--   hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
+-- end, {remap=true})
 
 --switch mouse to enabled or not
 --crtl m to enable alt m to disable

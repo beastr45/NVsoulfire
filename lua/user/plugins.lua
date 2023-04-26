@@ -153,22 +153,31 @@ return packer.startup(function(use)
   --use "Eandrju/cellular-automaton.nvim"
 
   --git plugins
-  -- 
+  --
   --vimfugitive
   use "tpope/vim-fugitive"
 
   --gitsigns
   --perhaps we will make a config file for this
   use {
-  'lewis6991/gitsigns.nvim',
-  config = function()
-    require('gitsigns').setup()
-  end
-}
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
 
+  --moving plugin for ease of use
+  use "matze/vim-move"
 
-
-
+  --hopping plugin for easy navigation
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2', -- optional but strongly recommended
+    config = function()
+      -- you can configure Hop the way you like here; see :h hop-config
+      require 'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+    end
+  }
 
 
 

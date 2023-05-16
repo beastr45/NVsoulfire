@@ -6,7 +6,7 @@ opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 
- 
+
 --local M = {}
 ---- function to create a list of commands and convert them to autocommands
 ---------- This function is taken from https://github.com/norcalli/nvim_utils

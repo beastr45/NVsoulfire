@@ -41,11 +41,11 @@ vim.g.maplocalleader = " "
 local hop = require('hop')
 local directions = require('hop.hint').HintDirection
 vim.keymap.set('', 'f', function()
-  hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
-end, {remap=true})
+    hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
+end, { remap = true })
 vim.keymap.set('', 'F', function()
-  hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
-end, {remap=true})
+    hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
+end, { remap = true })
 -- vim.keymap.set('', 't', function()
 --   hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
 -- end, {remap=true})
@@ -56,16 +56,17 @@ end, {remap=true})
 --switch mouse to enabled or not
 --crtl m to enable alt m to disable
 function ToggleMouse()
-  if vim.opt.mouse == "a" then
-    vim.opt.mouse = ""
-    print("mouse = nothing!")
-  elseif vim.opt.mouse == "" then
-    vim.opt.mouse = "a"
-    print("mouse = a!")
-  end
-  print(vim.opt.mouse)
+    if vim.opt.mouse == "a" then
+        vim.opt.mouse = ""
+        print("mouse = nothing!")
+    elseif vim.opt.mouse == "" then
+        vim.opt.mouse = "a"
+        print("mouse = a!")
+    end
+    print(vim.opt.mouse)
 end
-vim.keymap.set("n", "<A-m>" ,function() ToggleMouse() end, opts)
+
+vim.keymap.set("n", "<A-m>", function() ToggleMouse() end, opts)
 
 --leader o to enter in a space above/below
 keymap("n", "<leader>o", "o<Esc>", opts)
@@ -83,7 +84,7 @@ keymap("i", "<C-s>", ":w <CR>", opts)
 
 keymap("n", "<leader>t", ":ToggleTerm <CR>", opts)
 
---close buffer 
+--close buffer
 keymap("n", "<C-w>", ":bw <CR>", opts)
 
 -- Better window navigation
@@ -94,7 +95,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 --toggle files
 keymap("n", "<leader>e", ":NvimTreeToggle <cr>", opts)
---quit a window 
+--quit a window
 keymap("n", "<S-q>", "<C-w>q", opts)
 
 -- Resize with arrows
@@ -104,8 +105,8 @@ keymap("n", "<C-Left>", ":vertical resize -4<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +4<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<S-k>", ":bnext<CR>", opts)
+keymap("n", "<S-j>", ":bprevious<CR>", opts)
 
 
 

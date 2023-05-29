@@ -147,9 +147,8 @@ return packer.startup(function(use)
     use { "weilbith/nvim-code-action-menu",
         cmd = 'CodeActionMenu' }
 
-    --tetris plugin
-    --use "alec-gibson/nvim-tetris"
-    --cellular automaton use "Eandrju/cellular-automaton.nvim" git plugins vimfugitive
+
+    --git plugins vimfugitive
     use "tpope/vim-fugitive"
 
     --gitsigns
@@ -174,21 +173,6 @@ return packer.startup(function(use)
         end
     }
 
-    use {
-        'glacambre/firenvim',
-        run = function() vim.fn['firenvim#install'](0) end
-    }
-    use {
-        "folke/todo-comments.nvim",
-        requires = "nvim-lua/plenary.nvim",
-        config = function()
-            require("todo-comments").setup {
-                -- your configuration comes here
-                -- or leave it empty to use the default settings
-                -- refer to the configuration section below
-            }
-        end
-    }
 
 
 

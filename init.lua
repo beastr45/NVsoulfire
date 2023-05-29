@@ -28,7 +28,6 @@ require "user.colorscheme"
 --looks for init in the lsp directory
 require "user.lsp"
 
-
 --PLUGINS
 require("bufferline").setup{}
 require "user.plugins.cmp"

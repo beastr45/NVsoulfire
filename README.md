@@ -1,16 +1,46 @@
 # NVsoulfire
-this is a custom neovim configuration that copies the configuration in my home directory.
-this is a directory that is mainly indended to be a backup but was made public and you can feel free to use it.
 
-if you dont know how to install a custom config the steps are the following:
+## What is it? 
+This is my custom Neovim configuration I am currently building.
+Originally this repo was mainly intended to be a public backup for myself but you can feel free to use it.
+If you want an IDE like experience writing your own config can be very time consuming. If you are new to neovim please just use a popular nvim distro.
 
-  1. get the latest version of neovim in order to make shure all packages work
+## Features
+TODO add a picture of nvim config and a bullet list w/ full features
+- Completion
+- Cool themes
+- Cool plugins
 
-  2. make a configuration folder in ~/.config/nvim/
-  if you aldready have this folder delete your own config files or place it in a seperate folder
+## Requirements
+TODO add a list of additional programs plugins need like ripgrep and nerdfonts.
 
-  3. put all of the files in this git repository in your nvim folder. If you are a git noob and struggle to copy the git files you can use the git clone command
+## Installation
+If you don;t know how to install a custom config the steps are the following:
+  1. get the latest version of Neovim in order to make sure all packages work
+  2. make a configuration folder
 
-  4. load up neovim by entering nvim into the terminal 
+```sh
+mkdir -p ~/.config/nvim
+```
+  if you already have this folder backup your old config files first
 
-  if nothing happens make shure that all of the files are in the root of the nvim directory and not nested inside NVsoulfire
+```sh
+mv ~/.config/nvim ~/.config/nvim.bak
+```
+
+  3. put all of the files from this git repository in the nvim folder.
+
+```sh
+git clone https://github.com/beastr45/NVsoulfire ~/.config/nvim
+```
+
+  4. load up neovim and then wait for plugins to install and load automatically
+
+```sh
+nvim
+```
+
+>Often I find myself cloning without properly specifying the destination. If nothing happens make sure that the init.lua file is in the root of the nvim directory and not somewhere else.
+
+## Soulfire Basics & Configuration
+TODO right now soulfire is decently simple. I will add documentation for additional configuration here if needed.
